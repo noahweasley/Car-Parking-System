@@ -41,8 +41,8 @@ jobs:
   # Deployment job
   deploy:
     environment:
-      name: github-pages
-      url: https://noahweasley.github.io/Car-Parking-System/FrontEnd
+      name: Production
+      url: https://noahweasley.github.io/Car-Parking-System/Frontend
     runs-on: ubuntu-latest
     needs: build
     steps:
