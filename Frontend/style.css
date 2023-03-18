@@ -1,0 +1,95 @@
+:root {
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  /* outline: 2px solid red; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+p {
+  font-size: 1em;
+  line-height: 2em;
+  font-family: "Nunito", "Open Sans", "Lucida Sans Unicode", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--primary-color-dark);
+}
+
+.text-center {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.splash {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: #1c1c1c;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5em;
+  font-family: "Nunito", "Segoe UI", Tahoma, sans-serif;
+  font-size: calc(1vw + 0.8em);
+}
+
+p {
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 1.5em;
+  max-width: 80%;
+  font-size: calc(1vw + 0.4em);
+}
+
+button {
+  font-size: calc(0.6vw + 0.7em);
+  padding: 0.5em 2em;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
