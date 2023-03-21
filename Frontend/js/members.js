@@ -1,17 +1,15 @@
-const addButton = document.getElementById("add");
 const tableBody = document.getElementsByTagName("tbody")[0];
 
-addButton.addEventListener("click", () => {
-  window.location.href = "../pages/book-space.html";
-});
-
-fetch("../mock/parking.json")
+fetch("../mock/members.json")
   .then((response) => response.json())
-  .then((jsonArray) => showZoneDetails(jsonArray))
+  .then((jsonArray) => showMembers(jsonArray))
   .catch(console.error);
 
-function showZoneDetails(jsonArray) {
-  jsonArray.forEach((json) => {
+function showMembers(jsonArray) {
+  let jsonArray1 = [...jsonArray];
+  jsonArray1 = jsonArray1.sort((a, b) => a.regno > b.regno);
+  
+  jsonArray1.forEach((json) => {
     tableBody.append(createTableRow(json));
   });
 

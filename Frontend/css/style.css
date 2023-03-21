@@ -50,6 +50,8 @@ p {
   color: white;
   font-size: calc(1vw + 0.2em);
   font-family: "Nunito", "Open Sans", "Lucida Sans Unicode", sans-serif;
+  max-width: 766px;
+  text-align: center;
 }
 
 a {
@@ -82,8 +84,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-inline: 1em;
   align-items: center;
   z-index: 1;
+}
+
+.horizontal-container {
+  margin: 3em;
+}
+
+.horizontal-container * {
+  margin: 1em;
 }
 
 h1 {
@@ -181,6 +192,8 @@ h2 {
 .card p {
   /* border: 1px solid red; */
   margin-bottom: 0;
+  text-align: left;
+  width: initial;
 }
 
 .splash .navigate {
@@ -193,11 +206,16 @@ h2 {
   align-self: flex-start;
 }
 
+/* table {
+  max-width: 1024px;
+} */
+
 @keyframes gradient-border-animation {
   0% {
     transform-origin: center;
     transform: rotate(0deg);
   }
+  
   100% {
     transform-origin: center;
     transform: rotate(360deg);

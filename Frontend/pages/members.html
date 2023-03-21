@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car Parking System</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
@@ -14,22 +13,28 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="./favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
-
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/members.css">
+
+    <title>Group Members | Car Parking System</title>
+    
   </head>
   <body>
-    <div class="splash">
-      <img src="./images/app_icon.png" alt="" width="150" height="150" />
-      <h1>A Conceptual Car Parking System</h1>
-      <p>
-        This a conceptual car-parking system web app built by Group 0, to demonstrate the concept of a real-world database
-        model; schema, entities...
-      </p>
-      <div class="horizontal-container">
-        <a class="navigate" href="./pages/dashboard.html">Get Started</a>
-        <a class="navigate" href="./pages/members.html">View Members</a>
-      </div>
+    <h1 class="text-center">Project Group Members</h1>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Reg Number</th>
+            <th>Student Name</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
     </div>
+    <script src="../js/members.js"></script>
   </body>
 </html>

@@ -2,10 +2,10 @@ const addButton = document.getElementById("add");
 const tableBody = document.getElementsByTagName("tbody")[0];
 
 addButton.addEventListener("click", () => {
-  window.location.href = "../pages/book-space.html";
+  window.location.href = "../pages/add-available-space.html";
 });
 
-fetch("../mock/parking.json")
+fetch("../mock/space.json")
   .then((response) => response.json())
   .then((jsonArray) => showZoneDetails(jsonArray))
   .catch(console.error);

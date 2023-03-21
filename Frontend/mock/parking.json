@@ -1,0 +1,82 @@
+[
+    {
+        "pid": 1,
+        "name": "Noah Wesley",
+        "vehicle": "Camry LE",
+        "date": "22 March 2022",
+        "time-in": "04:00 am",
+        "time-out": "05:00 am"
+    },
+    {
+        "pid": 2,
+        "name": "Olivia Garcia",
+        "vehicle": "Corolla SE",
+        "date": "22 March 2022",
+        "time-in": "04:30 am",
+        "time-out": "05:45 am"
+    },
+    {
+        "pid": "3",
+        "name": "Anthonio Banderas",
+        "vehicle": "Accord EX-L ",
+        "date": "22 March 2022",
+        "time-in": "05:15 am ",
+        "time-out": "06:30 am"
+    },
+    {
+        "pid": 4,
+        "name": "Isabella Davis",
+        "vehicle": "Camry LE",
+        "date": "22 March 2022",
+        "time-in": "05:30 am",
+        "time-out": "06:45 am"
+    },
+    {
+        "pid": 5,
+        "name": "Lucas Wilson",
+        "vehicle": "Civic LX",
+        "date": "22 March 2022",
+        "time-in": "06:00 am",
+        "time-out": "07:15 am"
+    },
+    {
+        "pid": 6,
+        "name": "Emily Johnson",
+        "vehicle": "Accord Sport",
+        "date": "22 March 2022",
+        "time-in": "06:30 am",
+        "time-out": "07:45 am"
+    },
+    {
+        "pid": 7,
+        "name": "Mason Brown",
+        "vehicle": "Camry XSE",
+        "date": "22 March 2022",
+        "time-in": "07:00 am ",
+        "time-out": "07:45 am"
+    },
+    {
+        "pid": 8,
+        "name": "Ava Martinez",
+        "vehicle": "Camry LE",
+        "date": "22 March 2022",
+        "time-in": "07:30 am",
+        "time-out": "08:45 am"
+    },
+    {
+        "pid": 9,
+        "name": "Aiden Taylor",
+        "vehicle": "Corolla LE",
+        "date": "22 March 2022",
+        "time-in": "08:00 am",
+        "time-out": "09:15 am"
+    },
+    {
+        "pid": 10,
+        "name": "Sophia Anderson",
+        "vehicle": "Accord EX-L",
+        "date": "22 March 2022",
+        "time-in": "08:30 am",
+        "time-out": "12:00 pm"
+    }
+]
