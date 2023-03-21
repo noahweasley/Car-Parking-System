@@ -10,7 +10,7 @@ let arg = process.env.POSTGRES_PORT || "";
 let db_port = parseInt(arg);
 const pool = new pg_1.Pool({
     user: process.env.POSTGRES_USER,
-    host: 'localhost',
+    host: process.env.HOST,
     database: process.env.POSTGRES_DB,
     password: process.env.POSTGRES_PASS,
     port: db_port,
