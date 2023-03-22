@@ -14,16 +14,16 @@ get /api/car-parks
 get /api/available
 
 # returns a specific car park
-get '/api/car-park?park-name'
+get '/api/car-park?park-name=name of park'
 
 # books space for a user while saving details
 patch '/api/book-park?'
 ```
  ### NOTE
 
-The query parameters to send for patch book-park are = id, park, username  note id should be set to the email.
+The query parameters to send for patch book-park are = id, park, username.  note id should be set to the email.
 
-get 'api/car-park' send a query parameter with car space name eg park = car space name.... this gets a specific park. eg api/car-park?noahs ark car park
+get 'api/car-park' send a query parameter with car space name eg park name = car space name.... this gets a specific park. eg api/car-park?noahs ark car park
 
 ## Backend Base Url
 
