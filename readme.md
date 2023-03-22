@@ -4,8 +4,9 @@
 
 ### Screenshot
 
-[Screenshot 2023-03-17 012256.png](/Frontend/images/Screenshot 2023-03-17 012256.png)
-
+<a href="https://noahweasley.github.io/SMD-Desktop/website" target="_blank"
+    ><img src="Frontend/images/screenshot.png" alt="Buy Noah A Coffee" />
+</a>
 Live link to website => https://noahweasley.github.io/Car-Parking-System/Frontend/
 
 Shortened Link => https://bit.ly/car-parking-system
