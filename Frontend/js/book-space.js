@@ -6,10 +6,10 @@ const vehicleInput = document.getElementById("vehicle");
 const zoneInput = document.getElementById("zone");
 const snackBar = document.getElementById("snackbar");
 
-const baseURLPath = "";
-const requestURLPath = "";
-const baseURL = new URL("/", baseURLPath);
-const requestURL = new URL(requestURLPath, baseURL);
+// const baseURLPath = "";
+// const requestURLPath = "";
+// const baseURL = new URL("/", baseURLPath);
+// const requestURL = new URL(requestURLPath, baseURL);
 
 reserveButton.addEventListener("click", () => {
   const data = {
