@@ -27,6 +27,8 @@ reserveButton.addEventListener("click", () => {
     }).then((_res) => {
       const message = `Space reserved for ${data.name} `;
       showToast(message);
+    }).catch(error => {
+     showToast("An Error occurred, it's our fault")
     });
   } else {
     showToast("All fields are required, please fill them first");

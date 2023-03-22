@@ -1,14 +1,15 @@
 const tableBody = document.getElementsByTagName("tbody")[0];
+const snackBar = document.getElementById("snackbar");
 
 fetch("../mock/members.json")
   .then((response) => response.json())
   .then((jsonArray) => showMembers(jsonArray))
-  .catch(console.error);
+  .catch(showToast);
 
 function showMembers(jsonArray) {
   let jsonArray1 = [...jsonArray];
   jsonArray1 = jsonArray1.sort((a, b) => a.regno > b.regno);
-  
+
   jsonArray1.forEach((json) => {
     tableBody.append(createTableRow(json));
   });
@@ -23,4 +24,10 @@ function showMembers(jsonArray) {
 
     return tableRow;
   }
+}
+
+function showToast(message) {
+  snackBar.innerText = message;
+  snackBar.classList.add("show");
+  setTimeout(() => snackBar.classList.remove("show"), 3000);
 }

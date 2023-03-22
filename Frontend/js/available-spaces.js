@@ -1,5 +1,6 @@
 const addButton = document.getElementById("add");
 const tableBody = document.getElementsByTagName("tbody")[0];
+const snackBar = document.getElementById("snackbar");
 
 // const baseURLPath = "";
 // const requestURLPath = "";
@@ -7,13 +8,13 @@ const tableBody = document.getElementsByTagName("tbody")[0];
 // const requestURL = new URL(requestURLPath, baseURL);
 
 addButton.addEventListener("click", () => {
-  window.location.href = "../pages/add-available-space.html";
+  showToast("Not available at the moment");
 });
 
 fetch("../mock/space.json")
   .then((response) => response.json())
   .then((jsonArray) => showZoneDetails(jsonArray))
-  .catch(console.error);
+  .catch(showToast);
 
 function showZoneDetails(jsonArray) {
   jsonArray.forEach((json) => {
@@ -30,4 +31,9 @@ function showZoneDetails(jsonArray) {
 
     return tableRow;
   }
+}
+function showToast(message) {
+  snackBar.innerText = message;
+  snackBar.classList.add("show");
+  setTimeout(() => snackBar.classList.remove("show"), 3000);
 }
