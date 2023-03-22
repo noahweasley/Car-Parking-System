@@ -15,14 +15,23 @@ reserveButton.addEventListener("click", () => {
     zone: zoneInput.value
   };
 
-  fetch("/book-park", {
-    method: "POST",
-    body: JSON.stringify(data)
-  }).then((_res) => {
-    snackBar.innerText = `Space reserved for ${data.name} `;
-    snackBar.classList.add("show");
-    setTimeout(() => {
-      snackBar.classList.remove("show");
-    }, 3000);
-  });
+  if (data.name && data.gender && data.number && data.vehicle && data.zone) {
+    fetch("/book-park", {
+      method: "POST",
+      body: JSON.stringify(data)
+    }).then((_res) => {
+      const message = `Space reserved for ${data.name} `;
+      showToast(message);
+    });
+  } else {
+    showToast("All fields are required, please fill them first");
+  }
 });
+
+function showToast(message) {
+  snackBar.innerText = message;
+  snackBar.classList.add("show");
+  setTimeout(() => {
+    snackBar.classList.remove("show");
+  }, 3000);
+}
