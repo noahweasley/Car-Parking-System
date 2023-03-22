@@ -5,8 +5,9 @@
 ### Screenshot
 
 <a href="https://noahweasley.github.io/SMD-Desktop/website" target="_blank"
-    ><img src="Frontend/images/Screenshot.png" alt="Buy Noah A Coffee" />
+    ><img src="Frontend/images/screenshot.png" alt="Buy Noah A Coffee" />
 </a>
+
 Live link to website => https://noahweasley.github.io/Car-Parking-System/Frontend/
 
 Shortened Link => https://bit.ly/car-parking-system
