@@ -6,6 +6,11 @@ const vehicleInput = document.getElementById("vehicle");
 const zoneInput = document.getElementById("zone");
 const snackBar = document.getElementById("snackbar");
 
+const baseURLPath = "";
+const requestURLPath = "";
+const baseURL = new URL("/", baseURLPath);
+const requestURL = new URL(requestURLPath, baseURL);
+
 reserveButton.addEventListener("click", () => {
   const data = {
     name: nameInput.value,
@@ -16,7 +21,7 @@ reserveButton.addEventListener("click", () => {
   };
 
   if (data.name && data.gender && data.number && data.vehicle && data.zone) {
-    fetch("/book-park", {
+    fetch(requestURL, {
       method: "POST",
       body: JSON.stringify(data)
     }).then((_res) => {
@@ -31,7 +36,5 @@ reserveButton.addEventListener("click", () => {
 function showToast(message) {
   snackBar.innerText = message;
   snackBar.classList.add("show");
-  setTimeout(() => {
-    snackBar.classList.remove("show");
-  }, 3000);
+  setTimeout(() => snackBar.classList.remove("show"), 3000);
 }

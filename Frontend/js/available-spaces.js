@@ -1,6 +1,11 @@
 const addButton = document.getElementById("add");
 const tableBody = document.getElementsByTagName("tbody")[0];
 
+const baseURLPath = "";
+const requestURLPath = "";
+const baseURL = new URL("/", baseURLPath);
+const requestURL = new URL(requestURLPath, baseURL);
+
 addButton.addEventListener("click", () => {
   window.location.href = "../pages/add-available-space.html";
 });
