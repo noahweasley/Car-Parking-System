@@ -4,7 +4,7 @@ dotenv.config();
 let arg = process.env.POSTGRES_PORT || ""
 let db_port = parseInt(arg);
 const pool = new Pool({
-  connectionString: process.env.CONN
+    connectionString: process.env.CONN
   })
 
   export default pool;

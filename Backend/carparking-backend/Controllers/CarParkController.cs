@@ -18,8 +18,8 @@ public class CarParkController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet()]
-    public IEnumerable<WeatherForecast> Get()
+    [HttpGet]
+    public carPark[] carparks() 
     {
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
