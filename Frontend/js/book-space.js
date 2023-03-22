@@ -4,9 +4,10 @@ const genderInput = document.getElementById("gender");
 const numberInput = document.getElementById("number");
 const vehicleInput = document.getElementById("vehicle");
 const zoneInput = document.getElementById("zone");
+const snackBar = document.getElementById("snackbar");
 
 reserveButton.addEventListener("click", () => {
-  let data = {
+  const data = {
     name: nameInput.value,
     gender: genderInput.value,
     number: numberInput.value,
@@ -18,6 +19,10 @@ reserveButton.addEventListener("click", () => {
     method: "POST",
     body: JSON.stringify(data)
   }).then((_res) => {
-    alert("Space was booked");
+    snackBar.innerText = `Space reserved for ${data.name} `;
+    snackBar.classList.add("show");
+    setTimeout(() => {
+      snackBar.classList.remove("show");
+    }, 3000);
   });
 });

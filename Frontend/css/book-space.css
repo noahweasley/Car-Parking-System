@@ -25,6 +25,11 @@ body {
   display: flex;
   margin-block: 2em;
   padding-bottom: 3em;
+  padding: 1em;
+}
+
+label {
+  color: #71d2ff;
 }
 
 section.form {
@@ -65,8 +70,8 @@ section.form {
 }
 
 .form-control:focus {
-  border-color: #6db3fd;
-  box-shadow: 3px 3px 0 #6db3fd, -3px -3px 0 #6db3fd, -3px 3px 0 #6db3fd, 3px -3px 0 #6db3fd;
+  border-color: #4c90af;
+  box-shadow: 3px 3px 0 #4c90af, -3px -3px 0 #4c90af, -3px 3px 0 #4c90af, 3px -3px 0 #4c90af;
 }
 
 textarea.form-control {
