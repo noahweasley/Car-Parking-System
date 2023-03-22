@@ -7,12 +7,7 @@ clone the repository and run npm or yarn install
 
 ```bash
 npm install or yarn install
-```
 
-## Endpoints
-
-```python
-import foobar
 
 # returns all car parks
 get /api/car-parks
