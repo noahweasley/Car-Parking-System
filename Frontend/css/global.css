@@ -1,10 +1,9 @@
-/* <div class="lds-heart"><div></div></div> */
-
 .centered-element {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  align-self: center;
+  justify-self: center;
 }
 
 .lds-heart {

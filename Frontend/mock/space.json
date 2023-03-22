@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "area": "Awka Town",
+        "name": "Zone 1",
+        "remain": 10
+    },
+    {
+        "id": 2,
+        "area": "Awka Town",
+        "name": "Zone 2",
+        "remain": 1
+    },
+    {
+        "id": 3,
+        "area": "Awka Town",
+        "name": "Zone 3",
+        "remain": 10
+    },
+    {
+        "id": 4,
+        "area": "Awka Town",
+        "name": "Zone 4",
+        "remain": 10
+    },
+    {
+        "id": 5,
+        "area": "Awka Town",
+        "name": "Zone 5",
+        "remain": 8
+    },
+    {
+        "id": 6,
+        "area": "Awka Town",
+        "name": "Zone 6",
+        "remain": 9
+    },
+    {
+        "id": 7,
+        "area": "Awka Town",
+        "name": "Zone 7",
+        "remain": 0
+    },
+    {
+        "id": 8,
+        "area": "Awka Town",
+        "name": "Zone 8",
+        "remain": 2
+    },
+    {
+        "id": 9,
+        "area": "Awka Town",
+        "name": "Zone 9",
+        "remain": 4
+    },
+    {
+        "id": 10,
+        "area": "Awka Town",
+        "name": "Zone 10",
+        "remain": 6
+    },
+    {
+        "id": 11,
+        "area": "Awka Town",
+        "name": "Zone 11",
+        "remain": 1
+    }
+]
