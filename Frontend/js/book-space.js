@@ -6,10 +6,10 @@ const vehicleInput = document.getElementById("vehicle");
 const zoneInput = document.getElementById("zone");
 const snackBar = document.getElementById("snackbar");
 
-// const baseURLPath = "";
-// const requestURLPath = "";
-// const baseURL = new URL("/", baseURLPath);
-// const requestURL = new URL(requestURLPath, baseURL);
+const baseURLPath = "https://car-spacebooking.onrender.com/";
+const requestURLPath = "api/book-park?";
+const baseURL = new URL("/", baseURLPath);
+const requestURL = new URL(requestURLPath, baseURL);
 
 reserveButton.addEventListener("click", () => {
   const data = {
@@ -21,15 +21,22 @@ reserveButton.addEventListener("click", () => {
   };
 
   if (data.name && data.gender && data.number && data.vehicle && data.zone) {
+    reserveButton.innerText = "Reserving...";
+    reserveButton.setAttribute("disabled", true);
+
     fetch(requestURL, {
       method: "POST",
       body: JSON.stringify(data)
-    }).then((_res) => {
-      const message = `Space reserved for ${data.name} `;
-      showToast(message);
-    }).catch(error => {
-     showToast("An Error occurred, it's our fault")
-    });
+    })
+      .then((_res) => {
+        const message = `Space reserved for ${data.name} `;
+        showToast(message);
+      })
+      .catch(showToast)
+      .finally(() => {
+        reserveButton.innerText = "Reserve";
+        reserveButton.removeAttribute("disabled");
+      });
   } else {
     showToast("All fields are required, please fill them first");
   }

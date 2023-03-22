@@ -48,7 +48,7 @@ body {
 
 p {
   color: white;
-  font-size: calc(1vw + 0.2em);
+  font-size: calc(0.7vw + 0.4em);
   font-family: "Nunito", "Open Sans", "Lucida Sans Unicode", sans-serif;
   max-width: 766px;
   text-align: center;
@@ -215,9 +215,19 @@ h2 {
     transform-origin: center;
     transform: rotate(0deg);
   }
-  
+
   100% {
     transform-origin: center;
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
   }
 }

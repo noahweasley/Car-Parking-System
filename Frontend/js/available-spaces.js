@@ -2,16 +2,16 @@ const addButton = document.getElementById("add");
 const tableBody = document.getElementsByTagName("tbody")[0];
 const snackBar = document.getElementById("snackbar");
 
-// const baseURLPath = "";
-// const requestURLPath = "";
-// const baseURL = new URL("/", baseURLPath);
-// const requestURL = new URL(requestURLPath, baseURL);
+const baseURLPath = "https://car-spacebooking.onrender.com/";
+const requestURLPath = "api/car-parks";
+const baseURL = new URL("/", baseURLPath);
+const requestURL = new URL(requestURLPath, baseURL);
 
 addButton.addEventListener("click", () => {
   showToast("Not available at the moment");
 });
 
-fetch("../mock/space.json")
+fetch(requestURL)
   .then((response) => response.json())
   .then((jsonArray) => showZoneDetails(jsonArray))
   .catch(showToast);

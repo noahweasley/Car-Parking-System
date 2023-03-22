@@ -93,7 +93,12 @@ button[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:disabled {
+  background-color:#7f9dac;
+  cursor: not-allowed;
+}
+
+button[type="submit"]:hover:not(button[type="submit"]:disabled) {
   background-color: white;
   color: black;
 }

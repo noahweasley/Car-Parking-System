@@ -1,13 +1,11 @@
 # Backend for the car park space booking app
 
-
 ## Installation
 
 clone the repository and run npm or yarn install 
 
 ```bash
 npm install or yarn install
-
 
 # returns all car parks
 get /api/car-parks
@@ -27,15 +25,9 @@ The query parameters to send for patch book-park are = id, park, username  note 
 
 get 'api/car-park' send a query parameter with car space name eg park = car space name.... this gets a specific park. eg api/car-park?noahs ark car park
 
-
 ## Backend Base Url
 
 https://car-spacebooking.onrender.com/
-
-
-
-
-
 
 get '/api/car-parks'
 get '/car-park' ## send a query parameter with car space name eg park = car space name.... this gets a specific park
