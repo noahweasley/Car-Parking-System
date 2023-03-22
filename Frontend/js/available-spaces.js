@@ -11,7 +11,7 @@ addButton.addEventListener("click", () => {
   showToast("Not available at the moment");
 });
 
-fetch(requestURL)
+fetch("../mock/space.json")
   .then((response) => response.json())
   .then((jsonArray) => showZoneDetails(jsonArray))
   .catch(showToast);
