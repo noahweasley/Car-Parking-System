@@ -1,0 +1,223 @@
+@import url(./global.css);
+
+:root {
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  --primary-color: #3d3d3d;
+  --primary-color-dark: #2c2c2c;
+}
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+::selection {
+  background-color: #8ac4e3;
+  color: white;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #1c1c1c;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: white;
+  font-size: calc(1vw + 0.2em);
+  font-family: "Nunito", "Open Sans", "Lucida Sans Unicode", sans-serif;
+  max-width: 766px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--primary-color-dark);
+}
+
+.text-center {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.splash {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 1em;
+  align-items: center;
+  z-index: 1;
+}
+
+.horizontal-container {
+  margin: 3em;
+}
+
+.horizontal-container * {
+  margin: 1em;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  font-family: "Nunito", "Segoe UI", Tahoma, sans-serif;
+  margin: calc(1vw + 1em);
+  font-size: calc(1vw + 0.8em);
+}
+
+h2 {
+  font-size: calc(1vw + 0.5em);
+}
+
+.navigate {
+  font-size: calc(0.1vw + 0.8em);
+  padding: 0.8em 2em;
+  width: max-content;
+  background-color: #e7e7e7;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.navigate:hover {
+  background-color: #4c90af;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  gap: 0.5em;
+  width: 1080px;
+}
+
+.card {
+  position: relative;
+  width: calc(50% - 20px);
+  height: 250px;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 8px rgba(24, 24, 24, 0.445);
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  overflow: hidden;
+}
+
+.card::after {
+  background-color: #141414;
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  z-index: -1;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: 50%;
+  left: 0;
+  right: 0%;
+  bottom: 0;
+  z-index: -1;
+  background-clip: padding-box; /* only show the gradient within the padding box */
+  background-image: linear-gradient(to right, #ffcece, #ebde70);
+  animation: gradient-border-animation 10s linear infinite;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 8px 12px rgba(31, 31, 31, 0.589);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: whitesmoke;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.card p {
+  /* border: 1px solid red; */
+  margin-bottom: 0;
+  text-align: left;
+  width: initial;
+}
+
+.splash .navigate {
+  margin-top: 4em;
+}
+
+.card .navigate {
+  position: absolute;
+  bottom: 16px;
+  align-self: flex-start;
+}
+
+/* table {
+  max-width: 1024px;
+} */
+
+@keyframes gradient-border-animation {
+  0% {
+    transform-origin: center;
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform-origin: center;
+    transform: rotate(360deg);
+  }
+}
